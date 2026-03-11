@@ -10,6 +10,9 @@ import { IntegrationError } from "./integration-engine/errors.js";
 const app = express();
 const port = process.env.PORT || 3000;
 
+// ── Import Cartridges (POC only) ──
+import neptuneCartridge from "./cartridges/electricity/neptune_ems.js";
+
 app.use(express.json());
 
 // ── Initialize Engine Components ──
@@ -18,6 +21,9 @@ const rulesEngine = new RulesEngine();
 const cartridgeRunner = new CartridgeRunner();
 const httpExecutor = new HttpExecutor();
 const schemaValidator = new SchemaValidator();
+
+// ── Register Cartridges ──
+CartridgeRunner.register(neptuneCartridge);
 
 const orchestrator = new Orchestrator(
     router,

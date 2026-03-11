@@ -14,6 +14,7 @@ import type { RulesEngine } from "./rules-engine.js";
 import type { HttpExecutor } from "./http-executor.js";
 import type { CartridgeRunner } from "./cartridge-runner.js";
 import type { SchemaValidator } from "./schema-validator.js";
+import { getVendorRules } from "../config/vendor-rules.js";
 
 export class Orchestrator {
     constructor(
@@ -77,21 +78,51 @@ export class Orchestrator {
             const rawResponse = await this.rulesEngine.executeWithRetry(
                 routing.vendorId,
                 async () => {
+                    const resolvedUrl = vendorRequest.url || `${cartridgeOp.request.baseUrl}${cartridgeOp.request.path}`;
+                    // Dynamically fetch the vendor timeout (fallback 15s)
+                    const timeoutMs = getVendorRules(routing.vendorId).timeout || 15000;
+
                     return this.httpExecutor.execute({
-                        ...vendorRequest,
-                        ...cartridgeOp.request,
-                        // We use a fixed 5s timeout for the POC per the spec
-                        timeout: 5000,
+                        url: resolvedUrl,
+                        method: cartridgeOp.request.method,
+                        headers: {
+                            ...cartridgeOp.request.headers,
+                            ...vendorRequest.headers,
+                        },
+                        queryParams: {
+                            ...cartridgeOp.request.queryParams,
+                            ...vendorRequest.queryParams,
+                        },
+                        body: vendorRequest.body,
+                        timeout: timeoutMs,
                     });
                 }
             );
 
             // ── Step 5: Transform Response ──
             console.log(`[Orchestrator] Transforming vendor response`);
-            const transformed = this.cartridgeRunner.sandboxExec(
-                () => cartridgeOp.transformResponse(rawResponse.data),
-                { timeout: 2000 }
-            );
+            let transformed;
+            try {
+                transformed = this.cartridgeRunner.sandboxExec(
+                    () => cartridgeOp.transformResponse(rawResponse.data),
+                    { timeout: 2000 }
+                );
+            } catch (error) {
+                if (error instanceof IntegrationError && error.type === IntegrationErrorType.TRANSFORM_FAILED) {
+                    // Look up the original message in the cartridge's error map
+                    const originalMessage = error.message.replace("Cartridge function threw an error: ", "");
+                    const mappedType = cartridgeOp.errorMap[originalMessage];
+
+                    if (mappedType) {
+                        throw new IntegrationError(
+                            mappedType as IntegrationErrorType,
+                            originalMessage,
+                            { retryable: false }
+                        );
+                    }
+                }
+                throw error;
+            }
 
             // ── Step 6: Validate Output ──
             console.log(`[Orchestrator] Validating against superschema`);

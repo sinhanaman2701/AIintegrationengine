@@ -24,7 +24,7 @@ const ruleStore: Record<string, VendorEngineRules> = {
             baseDelayMs: 1000,
             maxDelayMs: 4000,
         },
-        timeout: 5000, // 5 seconds
+        timeout: 15000, // 15 seconds Default
     },
 };
 

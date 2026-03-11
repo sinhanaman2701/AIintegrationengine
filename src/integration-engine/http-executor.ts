@@ -18,7 +18,7 @@ export class HttpExecutor {
      * @throws IntegrationError on timeout, network failure, or server error
      */
     async execute(request: HttpRequest): Promise<HttpResponse> {
-        const { url, method, headers, queryParams, timeout } = request;
+        const { url, method, headers, queryParams, body, timeout } = request;
 
         // Build URL with query params
         const fullUrl = this.buildUrl(url, queryParams);
@@ -33,6 +33,7 @@ export class HttpExecutor {
             const response = await fetch(fullUrl, {
                 method,
                 headers,
+                body,
                 signal: controller.signal,
             });
 

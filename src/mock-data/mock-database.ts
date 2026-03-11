@@ -10,11 +10,11 @@ import type { VendorUnitMapping } from "../integration-engine/types.js";
 
 const mappings: VendorUnitMapping[] = [
     {
-        unit_id: 101,
+        unit_id: 101, // DUMMY TEST DATA FOR PM
         feature: "electricity",
         vendor_id: "neptune_ems",
-        vendor_meter_id: "METER-101-NEPTUNE",
-        credentials: { api_key: "test_key_neptune" },
+        vendor_meter_id: "T1-101", // Using doc example ID
+        credentials: {}, // Credentials hardcoded in cartridge body for demo
         is_active: true,
     },
     {

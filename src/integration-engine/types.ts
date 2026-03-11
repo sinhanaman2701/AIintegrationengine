@@ -49,7 +49,7 @@ export interface CartridgeOperation {
 }
 
 export interface CartridgeRequestDefinition {
-    method: "GET";            // POC: GET only
+    method: "GET" | "POST";
     baseUrl: string;
     path: string;             // Can contain {placeholders}
     headers: Record<string, string>;
@@ -68,6 +68,7 @@ export interface VendorRequestOutput {
     url: string;              // Fully resolved URL
     headers: Record<string, string>;
     queryParams?: Record<string, string>;
+    body?: string;
 }
 
 // ── Engine Rules Configuration ──
@@ -113,9 +114,10 @@ export interface ElectricityMeterBalance {
 
 export interface HttpRequest {
     url: string;
-    method: "GET";
+    method: "GET" | "POST";
     headers: Record<string, string>;
     queryParams?: Record<string, string>;
+    body?: string;
     timeout: number;
 }
 
