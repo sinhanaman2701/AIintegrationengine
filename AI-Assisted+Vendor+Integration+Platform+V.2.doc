@@ -1,0 +1,452 @@
+Date: Wed, 11 Mar 2026 05:53:30 +0000 (UTC)
+Message-ID: <1169002376.171.1773208410142@93d75a839d9d>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_170_664109465.1773208410142"
+
+------=_Part_170_664109465.1773208410142
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>AI-Assisted Vendor Integration Platform V.2</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font: var(--ds-font-body-small, Arial, Helvetica, FreeSans, sans-se=
+rif);
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: var(--ds-surface, #fff) !important;
+        color: var(--ds-text, #000) !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: var(--ds-text, #000);
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        page-break-after: avoid;
+    }
+
+    pre {
+        font: var(--ds-font-code, Monaco, "Courier New", monospace);
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>AI-Assisted Vendor Integration Platform V.2</h1>
+    <div class=3D"Section1">
+        <p local-id=3D"26bebf78b7b0"><strong>Date:</strong> 2026-03-10 <br>=
+<strong>By:</strong> Naman<br><strong>Status:</strong> =F0=9F=9F=A1 Propose=
+d</p>
+<h2 local-id=3D"9c0bbf5537f1" id=3D"AI-AssistedVendorIntegrationPlatformV.2=
+-1.ExecutiveSummary">1. Executive Summary</h2>
+<p local-id=3D"f4f299a565a2">This document proposes a hybrid integration ar=
+chitecture designed to maximize both <strong>speed of delivery</strong> (Pr=
+oduct) and <strong>operational stability</strong> (Engineering).</p>
+<p local-id=3D"3ba1db30624b">Currently, our core backend handles both the c=
+omplex network infrastructure (rate limiting, retries, multi-meter routing)=
+ and the specific vendor data transformations (e.g., Neptune JSON to ApnaCo=
+mplex schema). As we scale to 15+ vendors, combining these concerns within =
+individual vendor adapters creates unacceptable operational risks and devel=
+opment bottlenecks.</p>
+<p local-id=3D"c579a28a27ab"><strong>The Solution:</strong> We propose spli=
+tting our integration architecture into two rigid domains:</p>
+<ol start=3D"1" local-id=3D"c07ced29-4c2e-4823-9535-eb44b54ffe90">
+<li local-id=3D"b5163420-4141-40db-ab9a-3d45e57b2531">
+<p local-id=3D"517342c022ed"><strong>The Universal Integration Engine (Buil=
+t by Engineering):</strong> A generic, highly robust execution environment =
+inside our backend that handles all network safety, concurrency, caching, a=
+nd routing.</p></li>
+<li local-id=3D"279269ec-deec-4cc8-9f37-dc5e53723d46">
+<p local-id=3D"56e3ac38373c"><strong>The Vendor Cartridges (Generated by Pr=
+oduct + AI):</strong> Stateless, low-code JSON/JavaScript configuration fil=
+es that dictate <em>only</em> the data mapping rules, generated rapidly by =
+the Product team using AI tools like Antigravity.</p></li>
+</ol>
+<p local-id=3D"3d4c506bce5e">This "Sandbox" model ensures Engineering retai=
+ns absolute control over infrastructure health, while empowering Product to=
+ onboard new vendors in hours rather than sprints.</p>
+<hr local-id=3D"42e53562-9af8-4b66-8581-dfcc7bcddff2">
+<h2 local-id=3D"066e52b8b2ec" id=3D"AI-AssistedVendorIntegrationPlatformV.2=
+-2.TheProblemwith&quot;DirectIntegration&quot;atScale">2. The Problem with =
+"Direct Integration" at Scale</h2>
+<p local-id=3D"b7782d6e6097">While integrating adapters directly into the <=
+code>AC IN Backend</code> is the fastest initial approach, it fails at scal=
+e due to the blending of stateful infrastructure logic with stateless trans=
+lation logic.</p>
+<ul local-id=3D"90a9bf7f-9c48-41ba-b096-dafa5070fb3e">
+<li local-id=3D"2837eaf6-1399-4fee-8f35-89bea5e176f8">
+<p local-id=3D"1eeb2a48dfc8"><strong>Engineering Bottleneck:</strong> Every=
+ new vendor requires an engineering sprint to write HTTP retry loops, batch=
+ing logic, and error handling.</p></li>
+<li local-id=3D"014404e1-0326-4693-9c41-e32a68569ac9">
+<p local-id=3D"2717bc9d745b"><strong>The "Double Hop" Cost:</strong> Moving=
+ to a separate macro-Integration Service on AWS introduces network latency =
+and high DevOps overhead for small-to-medium vendor counts.</p></li>
+<li local-id=3D"1957cea5-4d14-4577-a342-61cd936bc572">
+<p local-id=3D"29bbc891e9f6"><strong>Vulnerability to Bad Code:</strong> If=
+ a developer (or an AI agent) writes a flawed <code>while</code> loop insid=
+e an adapter to handle a vendor's pagination, it can freeze a thread on our=
+ core backend, leading to a cascading failure of the ApnaComplex platform.<=
+/p></li>
+</ul>
+<hr local-id=3D"32d7ac03-16c0-4955-8c10-04813c12b583">
+<h2 local-id=3D"fe278283bde1" id=3D"AI-AssistedVendorIntegrationPlatformV.2=
+-3.ProposedArchitecture:The&quot;EngineandCartridge&quot;Model">3. Proposed=
+ Architecture: The "Engine and Cartridge" Model</h2>
+<p local-id=3D"9c7cf33a264f">We will build an <strong>Integration Engine</s=
+trong> into our existing backend. This engine acts as a secure "sandbox run=
+ner." It accepts a vendor <strong>Cartridge</strong> (a configuration file)=
+ and executes it safely.</p>
+<h3 local-id=3D"145781f78966" id=3D"AI-AssistedVendorIntegrationPlatformV.2=
+-3.1Domain1:TheIntegrationEngine(OwnedbyEngineering)">3.1 Domain 1: The Int=
+egration Engine (Owned by Engineering)</h3>
+<p local-id=3D"4733d78f10f2">The Engineering team will build a singular, hi=
+ghly resilient engine. It does <strong>not</strong> contain any vendor-spec=
+ific code (no <code>if vendor =3D=3D=3D 'neptune'</code>).</p>
+<p local-id=3D"13ff614c04df"><strong>Responsibilities of the Engine:</stron=
+g></p>
+<ul local-id=3D"26400ac5-da5b-4517-b32a-71267ed10056">
+<li local-id=3D"550be702-d4da-498f-9308-0602a27b6135">
+<p local-id=3D"19d6a3c583cd"><strong>Network Execution:</strong> The engine=
+ is the <em>only</em> component allowed to make outbound HTTP(s) requests t=
+o external APIs.</p></li>
+<li local-id=3D"34cf8ae6-4f68-4efd-93d2-ccea7ce528de">
+<p local-id=3D"c1c6e3c7bba9"><strong>Circuit Breaking &amp; Retries:</stron=
+g> Implements exponential backoff and circuit breakers to prevent our serve=
+rs from hanging on dead vendor APIs.</p></li>
+<li local-id=3D"8dc2ab7e-f27c-4848-a4c1-946b5a931b06">
+<p local-id=3D"d5db0c488515"><strong>Rate Limiting (Stateful):</strong> Che=
+cks Redis for global rate limits (e.g., "Max 50 req/min for Vendor ID 14") =
+<em>before</em> executing the Cartridge.</p></li>
+<li local-id=3D"87393951-905b-44c3-8790-e8c637bd9006">
+<p local-id=3D"c03a9e8fcb60"><strong>Multi-Meter Merging:</strong> Handles =
+the complex logic of merging EB (Grid) and DG (Backup) meters, even if they=
+ belong to different vendors (e.g., Capital + Elmeasure), and returning a u=
+nified response.</p></li>
+<li local-id=3D"f97408b4-cd00-467d-b03e-0b96587eb42e">
+<p local-id=3D"c8e37f749d1b"><strong>Cron/Batch Job Scheduling:</strong> Ma=
+nages the overnight triggers for Daily Consumption fetching.</p></li>
+</ul>
+<h3 local-id=3D"885206895c0a" id=3D"AI-AssistedVendorIntegrationPlatformV.2=
+-3.2Domain2:TheVendorCartridges(OwnedbyProduct+AI)">3.2 Domain 2: The Vendo=
+r Cartridges (Owned by Product + AI)</h3>
+<p local-id=3D"109dfcb2363f">The Product team will use AI (Antigravity) to =
+read messy vendor API documentation and generate a standardized <strong>Car=
+tridge</strong>.</p>
+<p local-id=3D"1d6e053500fa">A Cartridge is a stateless, restricted definit=
+ion file (e.g., JSON or a strictly typed TypeScript interface). It does <em=
+>not</em> contain network requests or loops.</p>
+<p local-id=3D"b5f9dd8ffaa3"><strong>Structure of a Cartridge:</strong></p>
+<ol start=3D"1" local-id=3D"d911918e-c01b-4c34-bb51-2eefba9754e5">
+<li local-id=3D"495df57e-0485-4e1f-be8a-0be496384ca7">
+<p local-id=3D"3ce2035804b5"><strong>Vendor ID &amp; Metadata:</strong> (e.=
+g., <code>id: "neptune_ems"</code>)</p></li>
+<li local-id=3D"4cfb066b-24c5-40a7-b071-feec0ad97995">
+<p local-id=3D"69b86b8748d2"><strong>Request Definition:</strong> How to fo=
+rmat the outbound request (Base URL, Headers, Body mappings).</p></li>
+<li local-id=3D"2b4681cd-54c3-4836-8a6e-8967a5ff3123">
+<p local-id=3D"c650791a0a41"><strong>Transformation Logic (The Superschema =
+Map):</strong> Pure functions or JSON Path expressions that map the vendor'=
+s response fields to the ApnaComplex Superschema (e.g., <code>vendor.CA_ADD=
+RESS -&gt; Superschema.meter_id</code>).</p></li>
+<li local-id=3D"a49c84f0-1944-469d-a644-13d0c1215815">
+<p local-id=3D"a3f46a2972a4"><strong>Error Code Map:</strong> Translating v=
+endor-specific errors (e.g., <code>ERR_1009</code>) into standard platform =
+errors (e.g., <code>METER_OFFLINE</code>).</p></li>
+</ol>
+<hr local-id=3D"51418642-7f2d-4cc4-a21f-5636015c87df">
+<h2 local-id=3D"25ec61686823" id=3D"AI-AssistedVendorIntegrationPlatformV.2=
+-4.TheRuntimeWorkflow">4. The Runtime Workflow</h2>
+<p local-id=3D"ddda806e1105">When a resident requests their live balance on=
+ the frontend:</p>
+<ol start=3D"1" local-id=3D"c0df7dab-1a13-4f05-8c3c-230a3b10f69a">
+<li local-id=3D"e51fd4fd-d236-4dba-8741-eaf19e5b9cd8">
+<p local-id=3D"dc35c0beb6b1"><strong>Request Initiated:</strong> Frontend c=
+alls <code>GET /api/prepaid/balance?unit_id=3D123</code>.</p></li>
+<li local-id=3D"c865fbf2-43b0-461e-8103-c8a6497ced49">
+<p local-id=3D"c597e994743b"><strong>Engine Takes Over:</strong> The Anacit=
+y <code>Backend Core</code> Integration Engine receives the request.</p></l=
+i>
+<li local-id=3D"a1d511b2-72ad-4982-88e7-670adf151242">
+<p local-id=3D"480b6309e897"><strong>Lookup Config:</strong> The Engine que=
+ries the database to find that Unit 123 uses the <code>neptune_ems</code> C=
+artridge.</p></li>
+<li local-id=3D"67ed7d54-5c5c-4bc8-a3ed-836623aab463">
+<p local-id=3D"14d5f4b16351"><strong>Security Check:</strong> The Engine ch=
+ecks Redis to ensure we haven't exceeded Neptune's rate limits.</p></li>
+<li local-id=3D"2639dfbf-0624-4617-88ed-6984891a0a20">
+<p local-id=3D"32b28f17d795"><strong>Execution:</strong> The Engine reads t=
+he <code>neptune_ems</code> Cartridge, constructs the HTTP request as defin=
+ed by the cartridge, and fires the network call.</p></li>
+<li local-id=3D"04eca047-bada-450e-9ff7-f7f58636eea6">
+<p local-id=3D"51103c30c1ab"><strong>Translation:</strong> The Engine recei=
+ves the raw vendor JSON and feeds it through the transformation mapping def=
+ined in the Cartridge.</p></li>
+<li local-id=3D"ec416860-db02-44fc-84ff-35f3f01c9245">
+<p local-id=3D"bbd7c00eefce"><strong>Response:</strong> The Engine returns =
+the clean, Superschema-compliant JSON back to the frontend.</p></li>
+</ol>
+<hr local-id=3D"ca55d51e-3d2a-4898-9b18-80f0d0e7c875">
+<h2 local-id=3D"5e1db9d65873" id=3D"AI-AssistedVendorIntegrationPlatformV.2=
+-5.Securityand&quot;TheSandbox&quot;">5. Security and "The Sandbox"</h2>
+<p local-id=3D"a5a1d79d43f0">The most critical feature of this architecture=
+ is safety from AI-generated code.</p>
+<ul local-id=3D"1aaf74b9-444d-49ff-8de6-9f4ad04a15b3">
+<li local-id=3D"7951f9c4-91db-44bd-ab8e-3bae708ba667">
+<p local-id=3D"d369f2ad8564"><strong>No Dependency Injection:</strong> The =
+Cartridges cannot import libraries (like <code>axios</code> or <code>redis<=
+/code>). They are sandboxed.</p></li>
+<li local-id=3D"ac7bc5be-16e9-4a33-850a-784413aaec3d">
+<p local-id=3D"424725914e1e"><strong>Timeouts Enforced by the Engine:</stro=
+ng> Even if a Cartridge mapping function is inefficient, the Engine wraps t=
+he execution in a strict timeout (e.g., 2000ms). If it takes too long, the =
+Engine kills the process.</p></li>
+<li local-id=3D"09f68b27-4ff0-471c-88f0-076237b7e259">
+<p local-id=3D"1012b86eabcb"><strong>Zero Infrastructure Risk:</strong> Bec=
+ause the Product team (and Antigravity) are only generating Cartridge defin=
+ition files, their output <em>physically cannot</em> bring down the databas=
+e, break the rate limiters, or cause HTTP connection leaks.</p></li>
+</ul>
+<hr local-id=3D"de15e901-093c-4fbe-a5cf-2820928fc897">
+<h2 local-id=3D"a7fecd40b3fe" id=3D"AI-AssistedVendorIntegrationPlatformV.2=
+-6.StrategicAdvantages">6. Strategic Advantages</h2>
+<ol start=3D"1" local-id=3D"b4f2cecc-dc41-43dd-9657-86ea4a8a42c4">
+<li local-id=3D"45c08a4a-6844-44b6-9049-60bbf9d47330">
+<p local-id=3D"f509ead93c74"><strong>Unmatched Speed-to-Market:</strong> Pr=
+oduct managers can use AI to generate, test, and deploy a new vendor Cartri=
+dge in hours, totally unblocking the business.</p></li>
+<li local-id=3D"aa77d6c3-5d6c-4761-9a5a-a9e0bd0dbde1">
+<p local-id=3D"b87817404527"><strong>Elimination of DevOps Overhead:</stron=
+g> We avoid the massive cost and management complexity of setting up a sepa=
+rate macro Integration Service on AWS, keeping our infrastructure lean.</p>=
+</li>
+<li local-id=3D"59df10a5-ca10-46de-9aa0-9bbd25aa70fb">
+<p local-id=3D"39a68f4dc6a2"><strong>Future-Proof:</strong> If we eventuall=
+y reach a scale where a separate AWS Integration Service <em>is</em> requir=
+ed, we simply lift the "Integration Engine" code out of our monolithic back=
+end and drop it onto an external server. The Cartridges remain identical.</=
+p></li>
+</ol>
+<h2 local-id=3D"2f7ba18f0ebc" id=3D"AI-AssistedVendorIntegrationPlatformV.2=
+-7.NextSteps">7. Next Steps</h2>
+<ol start=3D"1" local-id=3D"0cb6e9bf-45a7-4d4f-8279-f31bec01209e">
+<li local-id=3D"8352c5e1-e665-4816-910c-16417cde2d3b">
+<p local-id=3D"e66ed98ddddd">Engineering to outline the schema and constrai=
+nts of the <code>VendorCartridge</code> interface.</p>
+<ol start=3D"1" local-id=3D"a1c7607c34d2">
+<li local-id=3D"479f6307b717">
+<p local-id=3D"474a4e0a8b2b">implement based on the neptune meter</p></li>
+<li local-id=3D"338df94ecb73">
+<p local-id=3D"ed8e3622bf73">define the core integration engine logic based=
+ on the neptune meter api doc and other documents</p></li>
+<li local-id=3D"7ba7e7672e0f">
+<p local-id=3D"c54bcffa28c1">define the rules and brain</p></li>
+</ol></li>
+<li local-id=3D"b9f13fb6-ac6b-4e6c-a8bf-1262b6199de2">
+<p local-id=3D"8d8b4b3fd08a">Engineering to prototype the robust, generic <=
+code>executeCartridge()</code> engine loop.</p></li>
+<li local-id=3D"3cc509c8-1616-4ea9-be35-1de94e0a3d08">
+<p local-id=3D"3b75bbff8666">Product to use Antigravity to generate the fir=
+st test Cartridges for Capital Meter and Neptune based on the new interface=
+.</p></li>
+</ol>
+    </div>
+</body>
+</html>
+------=_Part_170_664109465.1773208410142--
