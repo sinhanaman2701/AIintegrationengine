@@ -34,4 +34,6 @@ This workflow MUST be followed religiously for every single vendor integration. 
 
 11. Wait for PM to confirm the local tests passed.
 // turbo
-12. Review the running `pr_payload.md` log, format it cleanly into a Pull Request description. Raise a Pull Request containing **ONLY THE CARTRIDGE**. Revert the dummy database mapping before committing. Use the `pr_payload.md` text as the PR description to explicitly instruct the Software Engineer to update `vendor-rules.ts` and the Production Database mappings. After the Pull Request is raised, delete the local `pr_payload.md` file.
+12. Review the running `pr_payload.md` log, format it cleanly into a Pull Request description. Revert the dummy database mapping before committing. Commit **ONLY THE CARTRIDGE**.
+    > ⛔ **CRITICAL RULE:** You MUST push the branch to the remote repository (`git push -u origin feature/branch-name`) immediately after committing. You MUST provide the PM with the direct GitHub link to open the Pull Request.
+    Use the `pr_payload.md` text as the PR description to explicitly instruct the Software Engineer to update `vendor-rules.ts` and the Production Database mappings. After the Pull Request is pushed, delete the local `pr_payload.md` file.
