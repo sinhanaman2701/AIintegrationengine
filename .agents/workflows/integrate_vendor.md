@@ -2,11 +2,11 @@
 description: integrate a new vendor api based on the standard operating procedure
 ---
 
-# 10-Step Vendor Integration SOP
+# 11-Step Vendor Integration SOP
 
 This workflow MUST be followed religiously for every single vendor integration. Do not skip any steps.
 
-> **MANDATORY FIRST ACTION:** Before doing ANYTHING else, create a `task.md` artifact that **exactly mirrors** the 10 steps below with their exact numbering (not a reinterpretation). Mark each step `[x]` only AFTER it is fully complete and confirmed. This gives the PM a visible progress tracker.
+> **MANDATORY FIRST ACTION:** Before doing ANYTHING else, create a `task.md` artifact that **exactly mirrors** the 11 steps below with their exact numbering (not a reinterpretation). Mark each step `[x]` only AFTER it is fully complete and confirmed. This gives the PM a visible progress tracker.
 
 ---
 
@@ -43,7 +43,11 @@ This workflow MUST be followed religiously for every single vendor integration. 
 // turbo
 9. Update the local environment for testing: Insert a dummy row in `src/mock-data/mock-database.ts` (e.g., `unit_id: 999` to `new_vendor`). Do NOT add rate limit config to `vendor-rules.ts` (let it fall back to default safely).
 
-10. Instruct the PM to start the local server (`npm run dev`) and test the endpoint end-to-end via their web browser using the dummy unit ID. **Before writing these instructions, you MUST look at the PM's working Postman collection (Step 4) to ensure you provide the correct dummy test `unit_id` and credentials that actually exist on the vendor's side.** Provide explicit, copy-pasteable instructions to the PM every time:
+// turbo
+10. **AI Autonomous Verification:** Before instructing the PM to test, you (the AI) MUST use the `run_command` tool to execute a `curl` request against the local `http://localhost:3000` endpoint. You must verify it returns `"success": true`. If it fails, you must debug your cartridge code, restart the server, and re-test until it succeeds.
+⛔ **HARD STOP: Do NOT proceed to Step 11 until your own `curl` command proves the integration is flawlessly working and exactly matches the Superschema.**
+
+11. Instruct the PM to start the local server (`npm run dev`) and test the endpoint end-to-end via their web browser using the dummy unit ID. **Before writing these instructions, you MUST look at the PM's working Postman collection (Step 4) to ensure you provide the correct dummy test `unit_id` and credentials that actually exist on the vendor's side.** Provide explicit, copy-pasteable instructions to the PM every time:
     - 1. The exact command to start the server (`npm run dev`).
     - 2. The exact URL to open in their browser (e.g., `http://localhost:3000/api/integration/electricity/getMeterBalance?unit_id=XXX`).
     - 3. The exact expected successful JSON output matching the Superschema.
@@ -55,9 +59,9 @@ This workflow MUST be followed religiously for every single vendor integration. 
 
 ### PHASE 3: Hand-off & Merge
 
-11. Wait for PM to confirm the local tests passed.
+12. Wait for PM to confirm the local tests passed.
 
 // turbo
-12. Review the running `pr_payload.md` log, format it cleanly into a Pull Request description. Revert the dummy database mapping before committing. Commit **ONLY THE CARTRIDGE**.
+13. Review the running `pr_payload.md` log, format it cleanly into a Pull Request description. Revert the dummy database mapping before committing. Commit **ONLY THE CARTRIDGE**.
     > ⛔ **CRITICAL RULE:** You MUST push the branch to the remote repository (`git push -u origin feature/branch-name`) immediately after committing. You MUST provide the PM with the direct GitHub link to open the Pull Request.
     Use the `pr_payload.md` text as the PR description to explicitly instruct the Software Engineer to update `vendor-rules.ts` and the Production Database mappings. After the Pull Request is pushed, delete the local `pr_payload.md` file.
